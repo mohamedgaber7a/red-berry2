@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>products</title>
+  <link rel="stylesheet" href="product.css" />
+  <link href="https://db.onlinewebfonts.com/c/4cc366525d6a884e8b2adf7850636c70?family=GE+Dinar+One+Medium" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body><!-- ▸ ضع هذا داخل <body> بدلاً من الهيدر الحالي -->
+    <header class="navbar">
+      <div class="container">
+        <!-- الشعار -->
+        <a href="index.html" class="logo">
+          <img src="Group 1.png" alt="RedBerry Logo">
+        </a>
+    
+        <!-- زر البُرجَر للموبايل -->
+        <button class="burger" id="burger">
+          <span></span>
+        </button>
+    
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="home">Home</a></li>
+            <li><a href="conatct.html" class="nav-link" data-i18n="about">About Us</a></li>           
+              <li><a href="products.html" class="nav-link active" data-i18n="products">Our Products</a></li>
+              <li><a href="galery.html" class="nav-link" data-i18n="gallery">Gallery</a></li>
+              <li><a href="blogs.html" class="nav-link" data-i18n="blogs">Blogs</a></li>
+              <li><a href="#contact" class="nav-link" data-i18n="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- زر تغيير اللغة (اختياري) -->
+        <div class="lang-switch desktop-only">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn">AR</button>
+        </div>
+      </div>
+    </header>
+    <section class="products-section">
+      <div class="container">
+        
+        <!-- الصورة داخل حاوية مستقلة -->
+        <div class="image-holder">
+          <img src="pro1.jpg" alt="Our Products" />
+        </div>
+    
+        <!-- العنوان داخل حاوية مستقلة -->
+        <div class="title-holder">
+          <h2 class="overlay-title">Our Products</h2>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="product-highlight">
+      <div class="container">
+        <div class="text-left">
+          <h2 data-i18n="products_heading_line">Frozen Goodness,<br>Packed Fresh for You.</h2>
+        </div>
+        <div class="text-right">
+          <p data-i18n="products_paragraph">
+            Browse our handpicked selection of frozen fruits and vegetables—harvested at peak ripeness and flash–frozen to lock in nutrients and taste. Whether you’re craving smoothie–ready berries, garden–fresh greens, or quick–prep meal solutions, we’ve got your freezer covered with nature’s best.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- =======================
+     Products Section
+======================= -->
+<section id="products" class="products-section">
+  <div class="container">
+
+    <!-- عنوان أو فاصل (اختياري) -->
+    <header class="section-header">
+      <h2 data-i18n="products_section_title">Our Products</h2>
+      <span class="divider"></span>
+    </header>
+
+    <!-- التبويبات / الفلاتر -->
+    <div class="product-tabs">
+      <button class="tab-button active" data-i18n="all_products">All Products</button>
+      <button class="tab-button" data-i18n="fruits">Fruits</button>
+      <button class="tab-button" data-i18n="vegetables">Vegetables</button>
+    </div>
+      <div class="product-grid">
+        
+        <!-- كرت 1 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="pph1.jpg" alt="IQF Mango">
+          </div>
+          <h3 data-i18n="product_mango">IQF Mango</h3>
+          <div class="product-detail">
+            <p><strong data-i18n="available_shapes">Available shapes:</strong><br>10x10 mm or 20x20 mm slices or cubes</p>
+            <p><strong data-i18n="varieties">Varieties:</strong><br>Zabdiya – Naomi – Kate</p>
+            <p><strong data-i18n="packaging">Packaging:</strong><br>800 g / 1 kg / 2.5 kg / 10 kg bags</p>
+            <p><strong data-i18n="shelf_life">Shelf life:</strong><br>18 months at –18°C</p>
+            <p><strong data-i18n="origin">Country of origin:</strong><br>Egypt 🇪🇬</p>
+          </div>
+          <div class="product-buttons">
+            
+            <a href="mango.html" class="btn-outline" data-i18n="read_more">Read more</a>
+            <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <span class="arrow">→</span></a>
+          </div>
+        </div>
+<!-- كرت 2 -->
+<div class="product-card">
+  <div class="product-img">
+    <img src="pph2.jpg" alt="IQF Strawberry">
+  </div>
+  <h3 data-i18n="product_strawberry">IQF Strawberry</h3>
+  <div class="product-detail">
+    <p><strong data-i18n="available_shapes">Available shapes:</strong><br data-i18n-ignore>Whole or sliced</p>
+    <hr>
+    <p><strong data-i18n="varieties">Varieties:</strong><br data-i18n-ignore>Festival – Camino Real</p>
+    <hr>
+    <p><strong data-i18n="packaging">Packaging:</strong><br data-i18n-ignore>800 g / 1 kg / 2.5 kg / 10 kg</p>
+    <hr>
+    <p><strong data-i18n="shelf_life">Shelf life:</strong><br data-i18n-ignore>18 months at –18°C</p>
+    <hr>
+    <p><strong data-i18n="origin">Country of origin:</strong><br data-i18n-ignore>Egypt 🇪🇬</p>
+  </div>
+  <div class="product-buttons">
+    <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
+    <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <span class="arrow">→</span></a>
+  </div>
+</div>
+
+<!-- كرت 3 -->
+<div class="product-card">
+  <div class="product-img">
+    <img src="pph3.jpg" alt="IQF Peas">
+  </div>
+  <h3 data-i18n="product_peas">IQF Peas</h3>
+  <div class="product-detail">
+    <p><strong data-i18n="available_shapes">Available shapes:</strong><br data-i18n-ignore>Whole</p>
+    <hr>
+    <p><strong data-i18n="varieties">Varieties:</strong><br data-i18n-ignore>Perfection – Lincoln</p>
+    <hr>
+    <p><strong data-i18n="packaging">Packaging:</strong><br data-i18n-ignore>800 g / 1 kg / 2.5 kg / 10 kg</p>
+    <hr>
+    <p><strong data-i18n="shelf_life">Shelf life:</strong><br data-i18n-ignore>18 months at –18°C</p>
+    <hr>
+    <p><strong data-i18n="origin">Country of origin:</strong><br data-i18n-ignore>Egypt 🇪🇬</p>
+  </div>
+  <div class="product-buttons">
+    <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
+    <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <span class="arrow">→</span></a>
+  </div>
+</div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="pph4.jpg" alt="IQF Peas">
+          </div>
+          <h3>IQF Peas</h3>
+          <div class="product-detail">
+            <p><strong>Available shapes:</strong><br>Whole</p>
+            <hr>
+            <p><strong>Varieties:</strong><br>Perfection – Lincoln</p>
+            <hr>
+            <p><strong>Packaging:</strong><br>800 g / 1 kg / 2.5 kg / 10 kg</p>
+            <hr>
+            <p><strong>Shelf life:</strong><br>18 months at –18°C</p>
+            <hr>
+            <p><strong>Country of origin:</strong><br>Egypt 🇪🇬</p>
+          </div>
+          <div class="product-buttons">
+            <a href="#" class="btn-outline">Read more</a>
+            <a href="#" class="btn-filled">Contact Us <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="pph5.jpg" alt="IQF Peas">
+          </div>
+          <h3>IQF Peas</h3>
+          <div class="product-detail">
+            <p><strong>Available shapes:</strong><br>Whole</p>
+            <hr>
+            <p><strong>Varieties:</strong><br>Perfection – Lincoln</p>
+            <hr>
+            <p><strong>Packaging:</strong><br>800 g / 1 kg / 2.5 kg / 10 kg</p>
+            <hr>
+            <p><strong>Shelf life:</strong><br>18 months at –18°C</p>
+            <hr>
+            <p><strong>Country of origin:</strong><br>Egypt 🇪🇬</p>
+          </div>
+          <div class="product-buttons">
+            <a href="#" class="btn-outline">Read more</a>
+            <a href="#" class="btn-filled">Contact Us <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="pph6.jpg" alt="IQF Peas">
+          </div>
+          <h3>IQF Peas</h3>
+          <div class="product-detail">
+            <p><strong>Available shapes:</strong><br>Whole</p>
+            <hr>
+            <p><strong>Varieties:</strong><br>Perfection – Lincoln</p>
+            <hr>
+            <p><strong>Packaging:</strong><br>800 g / 1 kg / 2.5 kg / 10 kg</p>
+            <hr>
+            <p><strong>Shelf life:</strong><br>18 months at –18°C</p>
+            <hr>
+            <p><strong>Country of origin:</strong><br>Egypt 🇪🇬</p>
+          </div>
+          <div class="product-buttons">
+            <a href="#" class="btn-outline">Read more</a>
+            <a href="#" class="btn-filled">Contact Us <span class="arrow">→</span></a>
+          </div>
+        </div>
+    
+      </div>
+  </div>
+</section>
+
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col about">
+      <img src="Group 1.png" alt="RedBerry Logo" class="logo">
+      <p data-i18n="footer_desc">
+        Discover the taste of nature preserved at its peak! Our premium frozen vegetables and fruits are harvested fresh, flash–frozen to lock in flavor, nutrients, and vibrant colors. From farm to table, we bring you wholesome goodness with unmatched quality and convenience. Elevate your meals with the essence of nature, anytime, anywhere.
+      </p><div class="social-icons">
+        <a href="https://facebook.com/YourPage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/YourPage" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@YourPage" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.snapchat.com/add/YourUsername" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+        <a href="https://youtube.com/YourChannel" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+    </div>
+
+    <!-- الروابط -->
+    <div class="footer-col links">
+      <h4 data-i18n="footer_links_title">Quick Links</h4>
+      <ul> 
+        <li><a href="#about" data-i18n="footer_about">About Us</a></li>
+        <li><a href="#products" data-i18n="footer_products">Our Products</a></li>
+        <li><a href="#gallery" data-i18n="footer_gallery">Gallery</a></li>
+        <li><a href="#blogs" data-i18n="footer_blogs">Blogs</a></li>
+        <li><a href="#contact" data-i18n="footer_contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- معلومات التواصل -->
+    <div class="footer-col contact">
+      <h4 data-i18n="footer_contact_title">Contacts:</h4>
+      <ul>
+        <li>
+          <a href="tel:+201000999226">
+            <i class="fas fa-phone-alt"></i> +201000999226
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/201000919626" target="_blank">
+            <i class="fab fa-whatsapp"></i> +201000919626
+          </a>
+        </li>
+        <li>
+          <a href="mailto:berry.info@redberry.com">
+            <i class="fas fa-envelope"></i> berry.info@redberry.com
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script src="product.js"></script>
+
+</body>
+</html>

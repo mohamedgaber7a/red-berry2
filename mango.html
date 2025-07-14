@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mango</title>
+  <link rel="stylesheet" href="mango.css" />
+  <link href="https://db.onlinewebfonts.com/c/4cc366525d6a884e8b2adf7850636c70?family=GE+Dinar+One+Medium" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body><!-- ▸ ضع هذا داخل <body> بدلاً من الهيدر الحالي -->
+    <header class="navbar">
+      <div class="container">
+        <!-- الشعار -->
+        <a href="index.html" class="logo">
+          <img src="Group 1.png" alt="RedBerry Logo">
+        </a>
+    
+        <!-- زر البُرجَر للموبايل -->
+        <button class="burger" id="burger">
+          <span></span>
+        </button>
+    
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="home">Home</a></li>
+            <li><a href="conatct.html" class="nav-link" data-i18n="about">About Us</a></li>           
+              <li><a href="products.html" class="nav-link active" data-i18n="products">Our Products</a></li>
+              <li><a href="galery.html" class="nav-link" data-i18n="gallery">Gallery</a></li>
+              <li><a href="blogs.html" class="nav-link" data-i18n="blogs">Blogs</a></li>
+              <li><a href="#contact" class="nav-link" data-i18n="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- زر تغيير اللغة (اختياري) -->
+        <div class="lang-switch desktop-only">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn">AR</button>
+        </div>
+      </div>
+    </header>
+    <section class="product-gallery">
+        <div class="container">
+      
+          <!-- سطر منفصل لزر الرجوع -->
+          <div class="back-wrapper">
+            <a href="javascript:history.back()" class="back-button">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+      
+          <div class="gallery-grid">
+            <!-- الصف الأول -->
+            <div class="row">
+              <img src="Rectangle 2858.jpg" alt="Mango cubes in bags">
+              <img src="Rectangle 2862 (2).jpg" alt="Half-cut mangoes with RedBerry label">
+              <img src="Rectangle 2860 (3).jpg" alt="Diced mango">
+            </div>
+      
+            <div class="row2">
+                <img src="Rectangle 2863 (4).jpg" alt="Close-up mango halves">
+                
+                <div class="photo-wrapper">
+                  <img src="Rectangle 2859 (5).jpg" alt="Mango slices in a crate">
+                  <div class="photo-count">
+                    <i class="fas fa-image"></i> 12 Photos
+                  </div>
+                </div>
+              </div>              
+      </section>
+
+
+      <section class="product-info">
+        <div class="container">
+          <h2 class="product-title" data-i18n="mango_title">مانجو مجمدة (IQF Mango)</h2>
+          <p class="product-desc" data-i18n="mango_desc">
+            We offer you premium frozen mangoes, selected from the finest Egyptian mango farms and frozen using IQF technology
+            to preserve their natural taste, perfect texture, and rich golden color.
+          </p>
+      
+          <div class="product-features">
+            <h4 data-i18n="features_title">Product Features:</h4>
+            <ul>
+              <li data-i18n="feature_1">Rich flavor and natural sugar content.</li>
+              <li data-i18n="feature_2">Permanent golden color after melting, with no change in color or taste.</li>
+              <li data-i18n="feature_3">Completely free of any additives or preservatives.</li>
+            </ul>
+          </div>
+      
+          <div class="product-specs">
+            <h4 data-i18n="specs_title">Product Specifications:</h4>
+            <ul>
+              <li data-i18n="spec_shape"><strong data-i18n="available_shapes">Available shapes:</strong> 10x10 mm or 20x20 mm slices or cubes (as per customer request)</li>
+              <li data-i18n="spec_varieties"><strong data-i18n="varieties">Varieties:</strong> Zabidiya – Naomi – Kate (as per customer request)</li>
+              <li data-i18n="spec_packaging"><strong data-i18n="packaging">Packaging:</strong> 800 g / 1 kg / 2.5 kg / 10 kg bags (bulk)</li>
+              <li data-i18n="spec_life"><strong data-i18n="shelf_life">Shelf life:</strong> 18 months at -18°C or cooler.</li>
+              <li data-i18n="spec_origin"><strong data-i18n="origin">Country of origin:</strong> 🇪🇬 Egypt</li>
+            </ul>
+          </div>
+      
+          <div class="product-certifications">
+            <h4 data-i18n="certifications_title">Quality and Certifications:</h4>
+            <div class="certification-logos">
+              <img src="iso.png" alt="ISO">
+              <img src="fda.png" alt="FDA">
+              <img src="haccp.png" alt="HACCP">
+              <img src="halal.png" alt="Halal">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="more-products">
+        <div class="container">
+          <div class="header-row">
+            <h2 data-i18n="more_products_title">More products</h2>
+            <a href="#" class="view-all-btn" data-i18n="view_all_btn">View All Products</a>
+          </div>
+      
+          <div class="card-grid">
+      
+            <!-- كرر الكرت مع إمكانية الترجمة -->
+            <div class="product-card">
+              <div class="product-image floating">
+                <img src="pph1.jpg" alt="IQF Mango">
+              </div>
+              <div class="product-info">
+                <h3 data-i18n="product_mango">IQF Mango</h3>
+                <ul>
+                  <li><strong data-i18n="available_shapes">Available shapes:</strong> 10x10 mm or 20x20 mm slices or cubes</li>
+                  <li><strong data-i18n="varieties">Varieties:</strong> Zabidiya – Naomi – Kate</li>
+                  <li><strong data-i18n="packaging">Packaging:</strong> 800 g / 1kg / 2.5kg / 10kg (bulk)</li>
+                  <li><strong data-i18n="shelf_life">Shelf life:</strong> 18 months at -18°C or cooler.</li>
+                  <li><strong data-i18n="origin">Country of origin:</strong> Egypt 🇪🇬</li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
+                <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image floating">
+                  <img src="pph2.jpg" alt="IQF Redberry">
+                </div>
+                <div class="product-info">
+                  <h3 data-i18n="redberry_title">IQF Redberry</h3>
+                  <ul>
+                    <li><strong data-i18n="available_shapes">Available shapes:</strong> <span data-i18n="redberry_shapes">10x10 mm or 20x20 mm slices or cubes</span></li>
+                    <li><strong data-i18n="varieties">Varieties:</strong> <span data-i18n="redberry_varieties">Zabidiya – Naomi – Kate</span></li>
+                    <li><strong data-i18n="packaging">Packaging:</strong> <span data-i18n="redberry_packaging">800 g / 1kg / 2.5kg / 10kg (bulk)</span></li>
+                    <li><strong data-i18n="shelf_life">Shelf life:</strong> <span data-i18n="redberry_life">18 months at -18°C or cooler.</span></li>
+                    <li><strong data-i18n="origin">Country of origin:</strong> <span data-i18n="redberry_origin">Egypt 🇪🇬</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions">
+                  <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
+                  <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            <div class="product-card">
+                <div class="product-image floating">
+                  <img src="pph3.jpg" alt="IQF Redberry">
+                </div>
+                <div class="product-info">
+                  <h3 data-i18n="redberry_title">IQF Redberry</h3>
+                  <ul>
+                    <li><strong data-i18n="available_shapes">Available shapes:</strong> <span data-i18n="redberry_shapes">10x10 mm or 20x20 mm slices or cubes</span></li>
+                    <li><strong data-i18n="varieties">Varieties:</strong> <span data-i18n="redberry_varieties">Zabidiya – Naomi – Kate</span></li>
+                    <li><strong data-i18n="packaging">Packaging:</strong> <span data-i18n="redberry_packaging">800 g / 1kg / 2.5kg / 10kg (bulk)</span></li>
+                    <li><strong data-i18n="shelf_life">Shelf life:</strong> <span data-i18n="redberry_life">18 months at -18°C or cooler.</span></li>
+                    <li><strong data-i18n="origin">Country of origin:</strong> <span data-i18n="redberry_origin">Egypt 🇪🇬</span></li>
+                  </ul>
+                </div>
+                <div class="product-actions">
+                  <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
+                  <a href="#" class="btn-filled" data-i18n="contact_us">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+              
+      
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+
+
+
+
+
+
+    <script src="mango.js"></script>
