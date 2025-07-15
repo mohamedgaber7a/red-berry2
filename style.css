@@ -937,7 +937,7 @@ body {
       z-index: 1001;
     }
   
-    .main-nav {
+    .main-nav{
       position: fixed;
       top: 0;
       left: 0; /* غيّر من right: 0 إلى left: 0 */
@@ -953,7 +953,7 @@ body {
       z-index: 1000;
     }
   
-    .main-nav.active {
+    .main-nav.active{
       transform: translateX(0);
     }
   
