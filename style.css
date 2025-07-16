@@ -48,7 +48,6 @@
 body {
   margin-top:100px ;
   font-family: 'GE Dinar One Medium', Arial, sans-serif;
-  font-family: 'GE Dinar Two Medium', sans-serif;
 
   background-color: var(--neutral-100-a);
 }
@@ -165,7 +164,6 @@ body {
 .burger::after  {bottom:0}
 
 /* زر اللغة (يختفي على الموبايل) */
-.lang-switch{display:flex;gap:8px}
 .lang-btn{border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;}
 .lang-btn.active{background:var(--btn-color);color:#fff}
 .desktop-only{display:flex}          /* يظهر على الديسكتوب */
@@ -887,10 +885,8 @@ body {
 }
 
 .cardslider {
-  /* background: linear-gradient(to bottom, #fefefe, #f6f6f6); */
   padding: 60px 20px;
   border-radius: 16px;
-  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.05); */
   overflow-x: auto;
 }
 
@@ -929,11 +925,6 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  z-index: 2;
-}
 .card {
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1472,9 +1463,9 @@ body {
     align-items: stretch;
   }
 
-  .btn-outline,
+  .card .btn-outline,
   .btn-fill {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
 }
