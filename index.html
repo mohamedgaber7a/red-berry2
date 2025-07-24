@@ -7,94 +7,124 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://db.onlinewebfonts.com/c/4cc366525d6a884e8b2adf7850636c70?family=GE+Dinar+One+Medium" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
-<body>
-      <header class="navbar">
-        <div class="container">
-          <a href="index.html" class="logo">
-            <img src="Group 1.png" alt="RedBerry Logo">
-          </a>
-      
-          <button class="burger" id="burger">
-            <span></span>
-          </button>
-      
-          <nav class="main-nav">
-            <ul>
-              <li><a href="index.html" class="nav-link active" data-i18n="home">Home</a></li>
-              <li><a href="conatct.html" class="nav-link" data-i18n="about">About Us</a></li>           
-                <li><a href="products.html" class="nav-link" data-i18n="products">Our Products</a></li>
-                <li><a href="galery.html" class="nav-link" data-i18n="gallery">Gallery</a></li>
-                <li><a href="blogs.html" class="nav-link" data-i18n="blogs">Blogs</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="contact">Contact Us</a></li>
-              </ul>
-          </nav>
-          <div class="lang-switch desktop-only">
-            <button class="lang-btn active">EN</button>
-            <button class="lang-btn">AR</button>
-          </div>
-        </div>
-      </header>
-  
-  <section id="hero" class="hero">
-    <div class="hero-text">
-      <h1>
-        <span data-i18n="hero_part1">Freshly</span>
-        <span class="highlight" data-i18n="hero_part2">Frozen</span>,
-        <br />
-        <span data-i18n="hero_part3">Naturally Vibrant</span>
-      </h1>
-      <p data-i18n="hero_desc">
-        Discover the taste of nature preserved at its peak! Our premium frozen vegetables and fruits are harvested fresh, flash–frozen to lock in flavor, nutrients, and vibrant colors. From farm to table, we bring you wholesome goodness with unmatched quality and convenience. Elevate your meals with the essence of nature, anytime, anywhere.
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-outline" data-i18n="read_more">Read more</a>
-        <a href="#" class="btn-filled" data-i18n="contact_us">
-          Contact Us <span class="arrow">→</span>
-        </a>
+<body><header class="navbar" data-aos="fade-up">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="Group 1.png" alt="RedBerry Logo" loading="lazy" />
+    </a>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active" data-i18n="home">Home</a></li>
+        <li><a href="conatct.html" class="nav-link" data-i18n="about">About Us</a></li>
+        <li><a href="products.html" class="nav-link" data-i18n="products">Our Products</a></li>
+        <li><a href="galery.html" class="nav-link" data-i18n="gallery">Gallery</a></li>
+        <li><a href="blogs.html" class="nav-link" data-i18n="blogs">Blogs</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switch desktop-only" id="langSwitcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="ar">AR</button>
+    </div>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h1>
+      <span data-i18n="hero_part1">Freshly</span>
+      <span class="highlight" data-i18n="hero_part2">Frozen</span>,
+      <br />
+      <span data-i18n="hero_part3">Naturally Vibrant</span>
+    </h1>
+
+    <p class="hero-desc" data-i18n="hero_desc">
+      Discover the taste of nature preserved at its peak! Our premium frozen vegetables and fruits are harvested fresh,
+      flash–frozen to lock in flavor, nutrients, and vibrant colors.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#about" class="btn-outline" data-i18n="read_more">Read more</a>
+      <a href="#contact" class="btn-filled" data-i18n="contact_us">
+        Contact Us <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-img" data-aos="fade-left">
+    <img
+      src="freepik_br_d24115e5-5891-4d14-89ab-7d64b6e44352 9 (2).jpg"
+      alt="Close-up of frozen berries with vibrant colors"
+      loading="lazy"
+    />
+  </div>
+</section>
+
+<section id="benefit-slider" class="benefit-slider" data-aos="fade-up">
+  <div class="slides">
+    
+    <div class="slide active">
+      <div class="image-part">
+        <img src="magno.jpg" alt="Mango">
+      </div>
+      <div class="text-part">
+        <p data-i18n="card_mango">
+          Mango boosts immunity and supports skin health.
+        </p>
       </div>
     </div>
-  
-    <div class="hero-img">
-      <img src="ph1.jpg" alt="Frozen berries" />
-    </div>
-  </section>
-  <section id="benefit-slider" class="benefit-slider">
-    <div class="slides">
-      <div class="slide active">
-        <div class="image-part"><img src="magno.jpg" alt="Mango"></div>
-        <div class="text-part">
-          <p data-i18n="card_mango">Mango boosts immunity and supports skin health.</p>
-        </div>
+
+    <div class="slide">
+      <div class="image-part">
+        <img src="ph3.jpg" alt="Pomegranate">
       </div>
-  
-      <div class="slide">
-        <div class="image-part"><img src="ph3.jpg" alt="Pomegranate"></div>
-        <div class="text-part">
-            <p data-i18n="card_pomegranate">Pomegranate great for the heart and memory.</p>
-        </div>
-      </div>
-  
-      <div class="slide">
-        <div class="image-part"><img src="molo.jpg" alt="Molokhia"></div>
-        <div class="text-part">
-            <p data-i18n="card_molokhia">Molokhia rich in nutrients for bones and digestion.</p>
-        </div>
-      </div>
-  
-      <div class="slide">
-        <div class="image-part"><img src="ph5.jpg" alt="Berries"></div>
-        <div class="text-part">
-            <p data-i18n="card_berries">Berries packed with antioxidants and good for the brain.</p>
-        </div>
+      <div class="text-part">
+        <p data-i18n="card_pomegranate">
+          Pomegranate great for the heart and memory.
+        </p>
       </div>
     </div>
-  
-    <div class="dots"></div>
-  </section>
+
+    <div class="slide">
+      <div class="image-part">
+        <img src="molo.jpg" alt="Molokhia">
+      </div>
+      <div class="text-part">
+        <p data-i18n="card_molokhia">
+          Molokhia rich in nutrients for bones and digestion.
+        </p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="image-part">
+        <img src="ph5.jpg" alt="Berries">
+      </div>
+      <div class="text-part">
+        <p data-i18n="card_berries">
+          Berries packed with antioxidants and good for the brain.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dots"></div>
+</section>
+
   <section id="about" class="about-section">
-    <div class="about-text">
+    <div class="about-text" data-aos="fade-right">
       <h5 class="sub-heading" data-i18n="about_title">about us</h5>
       <h2 data-i18n="about_heading">Our story stems from nature.</h2>
       <p data-i18n="about_paragraph">
@@ -102,7 +132,7 @@
         the journey of every frozen fruit and vegetable begins at our company. Since our founding,
         we have been selecting the finest crops from trusted local farms.
         Some are only harvested hours before being frozen using advanced 
-        <strong>IQF technology</strong>, which preserves flavor and nutrition.
+        <strong class="highlighted-iqf">IQF technology</strong>, which preserves flavor and nutrition.
       </p>
       <a href="conatct.html" class="read-more btn" data-i18n="read_more">
         Read more
@@ -115,16 +145,17 @@
         <h5 class="sub-heading" data-i18n="products">Our Product</h5>
   
         <div class="title-wrapper">
-          <h2 class="main-heading">
-            <span data-i18n="products_heading_line1">Frozen Goodness,</span><br>
-            <span data-i18n="products_heading_line2">Packed Fresh for You.</span>
-          </h2>
-  
+          <div class="title-text">
+            <h2 class="main-heading">
+              <span data-i18n="products_heading_line1">Frozen Goodness,</span><br />
+              <span data-i18n="products_heading_line2">Packed Fresh for You.</span>
+            </h2>
+          </div>
+        
           <p class="desc" data-i18n="products_paragraph">
-            Browse our handpicked selection of frozen fruits and vegetables—harvested at peak ripeness
-            and flash-frozen to lock in nutrients and taste.
-          </p>
+            Browse our handpicked selection of frozen fruits and vegetables—harvested at peak ripeness and flash-frozen to lock in nutrients and taste. Whether you're craving smoothie-ready berries, garden-fresh greens, or quick-prep meal solutions, we've got your freezer covered with nature’s best.          </p>
         </div>
+        
   
         <a href="#" class="btn" data-i18n="view_all_products">View All Products</a>
       </div>
@@ -225,7 +256,6 @@
   </div></section>
   
   
-
   <section id="gallery" class="gallery-section">
     <div class="gallery-header-wrapper">
       <div class="text-content">
@@ -234,12 +264,16 @@
           Defrost your assumptions— it’s time to rethink frozen food.
         </h2>
       </div>
-      <a href="#" class="btn" data-i18n="view_all_gallery">View All Gallery</a>
+      <div class="button-wrapper">
+        <a href="#" class="btn" data-i18n="view_all_gallery">View All Gallery</a>
+      </div>
     </div>
+  
     <div class="contain">
-      <img src="phhh1.jpg" alt="">
+      <img src="phhh1.jpg" alt="Frozen fruit gallery image" loading="lazy" />
     </div>
   </section>
+  
   
   <section id="blogs">
     <div class="container">
@@ -355,7 +389,32 @@
   
   
   
- 
+ <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // أولًا: AOS للـ Header فقط
+  AOS.init({
+    duration: 1000,
+    once: true, // ✅ Header يظهر مرة واحدة فقط
+    startEvent: 'DOMContentLoaded'
+  });
+
+  // بعدين: AOS لباقي العناصر
+  setTimeout(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // ✅ باقي العناصر تشتغل كل مرة
+      offset: 100
+    });
+  }, 100);
+</script>
+<script>
+  const track = document.querySelector('.slider-track');
+  track.innerHTML += track.innerHTML; // يكرر الكروت مرة أخرى
+</script>
+
+
+
   <script src="script.js"></script>
   
 </body>
